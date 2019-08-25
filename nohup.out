@@ -1,0 +1,116 @@
+[I 00:38:49.442 LabApp] JupyterLab extension loaded from /software/python37/lib/python3.7/site-packages/jupyterlab
+[I 00:38:49.442 LabApp] JupyterLab application directory is /software/python37/share/jupyter/lab
+[I 00:38:49.445 LabApp] Serving notebooks from local directory: /root/lab
+[I 00:38:49.445 LabApp] The Jupyter Notebook is running at:
+[I 00:38:49.445 LabApp] http://VM_0_6_centos:8888/?token=32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6
+[I 00:38:49.445 LabApp]  or http://127.0.0.1:8888/?token=32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6
+[I 00:38:49.446 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 00:38:49.451 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/nbserver-21990-open.html
+    Or copy and paste one of these URLs:
+        http://VM_0_6_centos:8888/?token=32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6
+     or http://127.0.0.1:8888/?token=32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6
+[I 00:39:03.133 LabApp] Build is up to date
+[I 00:43:30.618 LabApp] Creating new directory in /
+[E 00:43:43.457 LabApp] Uncaught exception PATCH /api/contents/Untitled%20Folder?1566665024890 (153.122.161.41)
+    HTTPServerRequest(protocol='http', host='148.70.189.44:8888', method='PATCH', uri='/api/contents/Untitled%20Folder?1566665024890', version='HTTP/1.1', remote_ip='153.122.161.41')
+    Traceback (most recent call last):
+      File "/software/python37/lib/python3.7/site-packages/tornado/web.py", line 1699, in _execute
+        result = await result
+      File "/software/python37/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 125, in patch
+        model = yield maybe_future(cm.update(model, path))
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 296, in update
+        self.rename(path, new_path)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 284, in rename
+        self.rename_file(old_path, new_path)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 569, in rename_file
+        if os.path.exists(new_os_path) and not samefile(old_os_path, new_os_path):
+      File "/software/python37/lib/python3.7/genericpath.py", line 96, in samefile
+        s1 = os.stat(f1)
+    FileNotFoundError: [Errno 2] No such file or directory: '/root/lab/Untitled Folder'
+[W 00:43:43.460 LabApp] Unhandled error
+[E 00:43:43.461 LabApp] {
+      "Host": "148.70.189.44:8888",
+      "Content-Length": "17",
+      "Authorization": "token 32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6",
+      "X-Xsrftoken": "2|e4c17cf9|c3d063409467a86c6f003dd69fc99bc5|1566663561",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Origin": "http://148.70.189.44:8888",
+      "Referer": "http://148.70.189.44:8888/lab",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "LEANOTE_LANG=zh-cn; mongoMachineId=6256432; XSRF-TOKEN=s578kT5F-781fnFBqaEdRcnaqrk_e4lChwwI; ssid=eyJjc3JmU2VjcmV0IjoiTXZhTEw3MHYyQzdWclg4aWlPREo3LVBxIn0=; ssid.sig=s_d8VSJ3EP2F-X1QZQedqTcpPX0; oc_sessionPassphrase=JNvk%2FfR2rwo31X%2Fp8jnI6St1vkdoGOi8m01WhGYe5gVNwv6LhCPMEABuLhrgIk2rHNYd8GgzzkJvoOjcthlCO8cJzw1RN9ZWWhMHDbASTIFnpPAII0%2BeV%2FIT9zfXNnYh; ocoujbq3m6nz=ad22fae7ac08ce87d996885119ab326c; nc_sameSiteCookielax=true; nc_sameSiteCookiestrict=true; _xsrf=2|e4c17cf9|c3d063409467a86c6f003dd69fc99bc5|1566663561; username-148-70-189-44-8888=\"2|1:0|10:1566665021|27:username-148-70-189-44-8888|44:NmZmNjI2OWU1OTliNGU3ZWIwZDg3NjNiNjU1NjJmZjQ=|42d0baae4c0d541ce5b7e94eef003ab3dc7ef509f9f82d02bcf0848552c6ecad\"",
+      "Connection": "close"
+    }
+[E 00:43:43.461 LabApp] 500 PATCH /api/contents/Untitled%20Folder?1566665024890 (153.122.161.41) 5.06ms referer=http://148.70.189.44:8888/lab
+[I 00:43:57.540 LabApp] Creating new notebook in /
+[I 00:43:57.597 LabApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[I 00:44:01.336 LabApp] Kernel started: d2caac1b-2571-44ee-bb16-1b51b8e3c177
+[I 00:44:12.571 LabApp] Saving file at /Untitled.ipynb
+[I 00:44:12.648 LabApp] Saving file at /Untitled.ipynb
+[E 00:44:39.968 LabApp] Uncaught exception POST /api/contents/Untitled.ipynb/checkpoints?1566665054702 (203.218.241.47)
+    HTTPServerRequest(protocol='http', host='148.70.189.44:8888', method='POST', uri='/api/contents/Untitled.ipynb/checkpoints?1566665054702', version='HTTP/1.1', remote_ip='203.218.241.47')
+    Traceback (most recent call last):
+      File "/software/python37/lib/python3.7/site-packages/tornado/web.py", line 1699, in _execute
+        result = await result
+      File "/software/python37/lib/python3.7/site-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 258, in post
+        checkpoint = yield maybe_future(cm.create_checkpoint(path))
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 520, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/software/python37/lib/python3.7/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/software/python37/lib/python3.7/shutil.py", line 120, in copyfile
+        with open(src, 'rb') as fsrc:
+    FileNotFoundError: [Errno 2] No such file or directory: '/root/lab/Untitled.ipynb'
+[W 00:44:39.970 LabApp] Unhandled error
+[E 00:44:39.970 LabApp] {
+      "Host": "148.70.189.44:8888",
+      "Content-Length": "0",
+      "Authorization": "token 32387bbcf6ef4af753b584a2bf1b2318740fa5f4101fa6e6",
+      "X-Xsrftoken": "2|e4c17cf9|c3d063409467a86c6f003dd69fc99bc5|1566663561",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Origin": "http://148.70.189.44:8888",
+      "Referer": "http://148.70.189.44:8888/lab",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "LEANOTE_LANG=zh-cn; mongoMachineId=6256432; XSRF-TOKEN=s578kT5F-781fnFBqaEdRcnaqrk_e4lChwwI; ssid=eyJjc3JmU2VjcmV0IjoiTXZhTEw3MHYyQzdWclg4aWlPREo3LVBxIn0=; ssid.sig=s_d8VSJ3EP2F-X1QZQedqTcpPX0; oc_sessionPassphrase=JNvk%2FfR2rwo31X%2Fp8jnI6St1vkdoGOi8m01WhGYe5gVNwv6LhCPMEABuLhrgIk2rHNYd8GgzzkJvoOjcthlCO8cJzw1RN9ZWWhMHDbASTIFnpPAII0%2BeV%2FIT9zfXNnYh; ocoujbq3m6nz=ad22fae7ac08ce87d996885119ab326c; nc_sameSiteCookielax=true; nc_sameSiteCookiestrict=true; _xsrf=2|e4c17cf9|c3d063409467a86c6f003dd69fc99bc5|1566663561; username-148-70-189-44-8888=\"2|1:0|10:1566665052|27:username-148-70-189-44-8888|44:N2ZiOWZlOThkYzE1NDAzMDkzMGRkNGZjYjNkYmFkYjM=|5b9d45ad27df82dc40f4e6558b6689b81b183da9d4570e8b29604c6a5bf91883\"",
+      "Connection": "close"
+    }
+[E 00:44:39.970 LabApp] 500 POST /api/contents/Untitled.ipynb/checkpoints?1566665054702 (203.218.241.47) 3.61ms referer=http://148.70.189.44:8888/lab
+[I 00:48:15.125 LabApp] Saving file at /网络/Untitled.ipynb
+[I 00:50:02.284 LabApp] Saving file at /网络/Untitled.ipynb
+[I 00:52:06.374 LabApp] Saving file at /网络/Untitled.ipynb
+[I 04:01:48.985 LabApp] Starting buffering for d2caac1b-2571-44ee-bb16-1b51b8e3c177:95edae12-cbcc-4b38-b4b3-2479cc8971b6
+[I 04:01:51.489 LabApp] Restoring connection for d2caac1b-2571-44ee-bb16-1b51b8e3c177:95edae12-cbcc-4b38-b4b3-2479cc8971b6
+[W 04:42:44.993 LabApp] 404 HEAD http://112.124.42.80:63435/ (60.191.52.254) 107.32ms referer=None
+[W 09:24:59.753 LabApp] 404 HEAD http://123.125.114.144/ (113.57.114.188) 6.94ms referer=None
+[I 11:18:32.052 LabApp] 302 GET / (171.214.139.166) 0.94ms
+[I 11:18:32.086 LabApp] 302 GET /lab? (171.214.139.166) 16.88ms
+[I 11:19:54.352 LabApp] 302 POST /login?next=%2Flab%3F (171.214.139.166) 1.79ms
+[I 11:20:28.390 LabApp] Build is up to date
+[I 11:21:44.066 LabApp] Build is up to date
+[I 11:23:44.358 LabApp] Saving file at /网络/html.ipynb
+[I 13:05:43.852 LabApp] 302 GET / (71.6.147.254) 0.86ms
+[I 13:05:46.302 LabApp] 302 GET /lab (71.6.147.254) 1.28ms
+[I 14:16:48.579 LabApp] Saving file at /网络/html.ipynb
+[I 14:32:41.314 LabApp] Creating new directory in /
+[I 14:32:53.076 LabApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 14:33:34.267 LabApp] Creating new file in /Linux
+[I 14:36:19.763 LabApp] Saving file at /Linux/untitled.md
+[I 14:36:52.113 LabApp] Saving file at /Linux/untitled.md
